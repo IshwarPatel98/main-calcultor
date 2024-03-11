@@ -1,0 +1,180 @@
+/* .redButton.horizTranslate2 { -webkit-transition: -webkit-transform 0.1s linear; -webkit-transform: translateX(20px);}
+.redButton.horizTranslate3 { -webkit-transition: -webkit-transform 0.1s linear; -webkit-transform: translateX(40px);}
+.redButton.horizTranslate1 { -webkit-transition: -webkit-transform 0.1s linear; -webkit-transform: translateX(0px);} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+:root {
+
+    --very-dark-desaturated-blue-main: hsl(222, 26%, 31%);
+    --very-dark-desaturated-blue-keypad-bg: hsl(223, 31%, 20%);
+    --very-dark-desaturated-blue-scren-bg: hsl(224, 36%, 15%);
+
+    --desaturated-dark-blue-key-bg: hsl(225, 21%, 49%);
+    --desaturated-dark-blue-key-shadow: hsl(224, 28%, 35%);
+    --red-key-background-toogle: hsl(6, 63%, 50%);
+    --dark-red-key-shadow: hsl(6, 70%, 84%);
+    --light-grayish-ornage-key-bg: hsl(30, 25%, 89%);
+    --grayish-orange-key-shadow: hsl(221, 14%, 31%);
+    --white: #222222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--very-dark-desaturated-blue-main);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "League Spartan", sans-serif;
+    ;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    border: 2px solid white;
+    width: 20rem;
+
+
+}
+
+.redButton.horizTranslate2 {
+    -webkit-transition: -webkit-transform 0.1s linear;
+    -webkit-transform: translateX(20px);
+}
+
+.redButton.horizTranslate3 {
+    -webkit-transition: -webkit-transform 0.1s linear;
+    -webkit-transform: translateX(40px);
+}
+
+.redButton.horizTranslate1 {
+    -webkit-transition: -webkit-transform 0.1s linear;
+    -webkit-transform: translateX(0px);
+}
+
+#outerContainer {
+    position: relative;
+    width: 111px;
+    height: 98px;
+    background-color: #4A5B7E;
+}
+
+#buttonContainer {
+    background-color: #222D41;
+    width: 71px;
+    height: 28px;
+    position: relative;
+    left: 20px;
+    top: 45px;
+    border-radius: 14px;
+}
+
+.redButton {
+    width: 16px;
+    height: 16px;
+    background-color: #DB3D2B;
+    border-radius: 8px;
+    position: relative;
+    top: 6px;
+    left: 6px;
+}
+
+#legendTextContainer {
+    left: 22px;
+    display: inline-block;
+    position: absolute;
+    top: 23px;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.legendText {
+    display: inline-block;
+    width: 20px;
+    padding-bottom: 33px;
+    cursor: default;
+    user-select: none;
+}
+
+#message {
+    border: 1px solid #cccccc;
+    display: inline-block;
+    padding: 4px;
+    margin-top: 6px;
+    font-family: Arial;
+    font-size: 10pt;
+}
+
+#inputDisplay {
+    text-align: right;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--very-dark-desaturated-blue-scren-bg);
+    width: 18rem;
+    height: 4.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-family: "League Spartan", sans-serif;
+    
+
+}
+
+.btns {
+    width: 18rem;
+    max-height: 22rem;
+    margin-top: 1.5rem;
+    padding: 1.8rem;
+    background-color: var(--very-dark-desaturated-blue-keypad-bg);
+    border-radius: 5px;
+}
+
+
+button {
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    margin: 0.2rem;
+
+    font-weight: 700;
+    border: hidden;
+    font-family: "League Spartan", sans-serif;
+    ;
+    background-color: var(--light-grayish-ornage-key-bg);
+    box-shadow: 0px 25px 20px -20px var(--grayish-orange-key-shadow);
+    ;
+}
+
+.lb {
+    width: 6.6rem;
+}
+
+#reset {
+    background-color: var(--desaturated-dark-blue-key-bg);
+    color: white
+}
+
+#equal {}
+
+#del {
+    background-color: var(--desaturated-dark-blue-key-bg);
+    color: white;
+}
